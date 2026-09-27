@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>هل تحتاج البذور إلى الماء لتنبت وتنمو؟</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --water:#2f7fb8; --water-dark:#1e5c88; --sprout:#4a9a4e; --dry:#b9926a;
+  --cream:#f2f7fb; --ink:#20303c; --card:#ffffff; --gold:#e0a13a;
+  padding-top: env(safe-area-inset-top,0px); padding-bottom: env(safe-area-inset-bottom,0px);
+}
+*{box-sizing:border-box;}
+html,body{margin:0;background:var(--cream);color:var(--ink);font-family:'Tajawal',sans-serif;}
+body{padding:24px 16px 60px;}
+.wrap{max-width:760px;margin:0 auto;}
+header{background:linear-gradient(135deg,var(--water),#5ba7d6);border-radius:20px;padding:28px 24px;box-shadow:0 6px 0 var(--water-dark);}
+header h1{margin:0 0 6px;font-size:1.7rem;font-weight:900;color:#fff;}
+header p{margin:0;color:#e4f2fb;font-weight:500;}
+.goal{background:var(--card);border-radius:16px;padding:18px 20px;margin-top:18px;border-inline-start:6px solid var(--gold);line-height:1.9;}
+.goal b{color:var(--water-dark);}
+.materials{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;}
+.mchip{background:var(--card);border-radius:12px;padding:10px 14px;font-size:.9rem;font-weight:700;color:var(--water-dark);}
+section.step{background:var(--card);border-radius:18px;padding:20px;margin-top:20px;box-shadow:0 3px 0 #dbe6ee;}
+.step h2{display:flex;align-items:center;gap:10px;font-size:1.1rem;margin:0 0 12px;color:var(--water-dark);}
+.badge{background:var(--water);color:#fff;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;flex-shrink:0;font-size:.9rem;}
+.hint{font-size:.95rem;line-height:1.9;color:#3a4d5a;margin:0 0 10px;}
+.qa{margin-top:14px;padding-top:12px;border-top:1px dashed #d7e2ea;}
+.qa p.q{font-weight:700;margin:0 0 8px;}
+button.reveal{background:var(--gold);color:#fff;border:none;border-radius:10px;padding:8px 16px;font-family:inherit;font-weight:700;font-size:.9rem;cursor:pointer;}
+.answer{display:none;background:#eaf5ee;border-radius:10px;padding:12px 14px;margin-top:10px;line-height:1.9;font-size:.95rem;border-inline-start:5px solid var(--sprout);}
+.answer.show{display:block;}
+textarea{width:100%;min-height:60px;border:1px solid #d7e2ea;border-radius:10px;padding:10px;font-family:inherit;font-size:.9rem;margin-top:8px;background:#fbfdff;}
+
+.sim{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:6px;}
+.bag{flex:1;min-width:150px;max-width:220px;text-align:center;background:#f5faff;border:2px solid #d7e6f0;border-radius:16px;padding:12px;}
+.bag h3{margin:4px 0;font-size:.95rem;}
+.bag svg{width:100%;height:150px;}
+.controls{text-align:center;margin-top:16px;}
+.controls button{background:var(--water);color:#fff;border:none;border-radius:10px;padding:10px 20px;font-family:inherit;font-weight:700;font-size:.95rem;cursor:pointer;}
+.controls button:disabled{background:#a9c3d3;}
+.day-label{margin-top:10px;font-weight:700;color:var(--water-dark);}
+
+.extra{background:linear-gradient(135deg,#eaf6ff,#d7ecfb);border:2px dashed var(--water);border-radius:18px;padding:20px;margin-top:22px;}
+.extra h2{margin:0 0 8px;color:var(--water-dark);font-size:1.05rem;}
+footer{text-align:center;margin-top:26px;color:#7f92a0;font-size:.85rem;}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){--cream:#141c22;--card:#1e2830;--ink:#eef4f8;}
+  .answer{background:#1c2e21;}
+  .bag{background:#182229;border-color:#2c3a44;}
+  textarea{background:#101820;color:#eef4f8;border-color:#33424c;}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>💧 هَل تَحتاجُ البُذورُ إلى الماءِ لِتَنبُتَ وتَنمو؟</h1>
+  <p>نَشاطٌ اسْتِقْصائِيٌّ · أَسْتَكْشِفُ</p>
+</header>
+
+<div class="goal">
+  <b>أُكَوِّنُ فَرَضِيَّةً:</b> هَل تَحتاجُ البُذورُ إلى الماءِ لِتَنبُتَ وتَنمو؟ أَضَعُ فَرَضِيَّتي وأَبدَؤُها بـ "إذا لَم تَحصُل البُذورُ على الماءِ فَإِنَّها ...".
+</div>
+
+<div class="materials">
+  <div class="mchip">🌱 ٦ بُذور سَريعَة الإنباتِ</div>
+  <div class="mchip">🔍 عَدَسَة مُكَبِّرَة</div>
+  <div class="mchip">🧻 مِنشَفَتان وَرَقِيَّتان</div>
+  <div class="mchip">💧 ماء</div>
+  <div class="mchip">👜 كيسان بِلاستيكِيّان</div>
+  <div class="mchip">🥄 مِلعَقَة طَعام</div>
+</div>
+
+<section class="step">
+  <h2><span class="badge">١</span> أَلاحِظُ</h2>
+  <p class="hint">انظُر إلى البُذورِ بالعَدَسَةِ المُكَبِّرَةِ، وسَجِّل ما تُشاهِدُهُ (اللَّون، الحَجم، الشَّكل).</p>
+  <div class="qa">
+    <textarea placeholder="اكتب وصفك للبذور هنا..."></textarea>
+  </div>
+</section>
+
+<section class="step">
+  <h2><span class="badge">٢</span> أَتَعامَلُ مَعَ المُتَغَيِّراتِ</h2>
+  <p class="hint">بَلِّل مِنشَفَةً وَرَقِيَّةً بِمِلعَقَتَينِ مِنَ الماءِ، ضَعها في كيسٍ واكتُب عَليهِ "رَطب". ضَع المِنشَفَةَ الأُخرى جافَّةً في كيسٍ آخَرَ واكتُب عَليهِ "جاف". ثُمَّ ضَع ثَلاثَ بُذورٍ في كُلِّ كيسٍ، وأَغلِق الكيسَينِ، وضَعهُما في مَكانٍ دافِئ.</p>
+</section>
+
+<section class="step">
+  <h2><span class="badge">٣</span> ألاحِظُ — المُحاكاةُ التَّفاعُلِيَّةُ</h2>
+  <p class="hint">اضغَط "يَومٌ جَديد" لِمُتابَعَةِ البُذورِ خِلالَ أُسبوعٍ كامِل، وراقِب الفَرقَ بَينَ الكيسَينِ.</p>
+  <div class="sim">
+    <div class="bag">
+      <h3>الكيس الرطب</h3>
+      <svg id="wetSeed" viewBox="0 0 120 150"><rect x="8" y="90" width="104" height="55" rx="10" fill="#dceeff" stroke="#8fb9d9" stroke-width="2"/><ellipse cx="60" cy="118" rx="42" ry="16" fill="#c9dff0"/><g id="wetPlants"></g></svg>
+    </div>
+    <div class="bag">
+      <h3>الكيس الجاف</h3>
+      <svg viewBox="0 0 120 150"><rect x="8" y="90" width="104" height="55" rx="10" fill="#fbf3e6" stroke="#e0cba6" stroke-width="2"/><ellipse cx="30" cy="118" rx="7" ry="6" fill="#c99a5b"/><ellipse cx="60" cy="122" rx="7" ry="6" fill="#c99a5b"/><ellipse cx="90" cy="118" rx="7" ry="6" fill="#c99a5b"/></svg>
+    </div>
+  </div>
+  <div class="controls">
+    <button id="dayBtn" onclick="nextDay()">يومٌ جديد ▶</button>
+    <div class="day-label" id="dayLabel">اليوم: ٠</div>
+  </div>
+</section>
+
+<section class="step">
+  <h2><span class="badge">٤</span> أَسْتَخْلِصُ النَّتائِجَ</h2>
+  <div class="qa">
+    <p class="q">أُفَسِّرُ البَياناتِ: ما البُذورُ الَّتي تَغَيَّرَت؟ وكَيفَ تَغَيَّرَت؟</p>
+    <button class="reveal" onclick="toggleAns('a1')">إظهار الإجابة</button>
+    <div class="answer" id="a1">البُذورُ الَّتي في الكيسِ الرَّطبِ هيَ الَّتي تَغَيَّرَت: تَشَقَّقَت قِشرَتُها ثُمَّ خَرَجَ مِنها جِذرٌ صَغيرٌ فَساقٌ، أَيْ أنَّها <b>أَنبَتَت ونَمَت</b>. أَمَّا البُذورُ الَّتي في الكيسِ الجافِّ فَبَقِيَت كَما هيَ دونَ أَيِّ تَغييرٍ لِأَنَّها لَم تَحصُل على الماءِ.</div>
+  </div>
+  <div class="qa">
+    <p class="q">هَل نَتائِجي تَدعَمُ فَرَضِيَّتي؟</p>
+    <button class="reveal" onclick="toggleAns('a2')">إظهار الإجابة</button>
+    <div class="answer" id="a2">نَعَم، تَدعَمُ النَّتائِجُ الفَرَضِيَّةَ؛ فَقَد ثَبَتَ أَنَّ البُذورَ الَّتي حَصَلَت على الماءِ نَبَتَت ونَمَت، بَينَما البُذورُ الَّتي لَم تَحصُل على الماءِ لَم تَنبُت، مِمّا يُؤَكِّدُ أَنَّ <b>الماءَ ضَرورِيٌّ لِإِنباتِ البُذورِ ونُمُوِّها</b>.</div>
+  </div>
+</section>
+
+<div class="extra">
+  <h2>🔍 أَسْتَكْشِفُ أَكثَر</h2>
+  <p class="hint">أُجَرِّبُ: ماذا يَحدُثُ إذا بَلَّلتُ المِنشَفَةَ الوَرَقِيَّةَ بِمادَّةٍ أُخرى غَيرِ الماءِ مِثلِ الزَّيتِ والخَلِّ؟ أَضَعُ خُطَّةً ثُمَّ أُجَرِّبُها عَمَلِيًّا.</p>
+  <div class="qa" style="border-top:none;padding-top:0;">
+    <button class="reveal" onclick="toggleAns('a3')">اقتراح خطة</button>
+    <div class="answer" id="a3">أُحَضِّرُ ثَلاثَةَ أَكياسٍ: الأَوَّلُ بِمِنشَفَةٍ مُبَلَّلَةٍ بِالماءِ (لِلمُقارَنَةِ)، والثّاني بِمِنشَفَةٍ مُبَلَّلَةٍ بِالزَّيتِ، والثّالِثُ بِمِنشَفَةٍ مُبَلَّلَةٍ بِالخَلِّ. أَضَعُ العَدَدَ نَفسَهُ مِنَ البُذورِ في كُلِّ كيسٍ، وأَحفَظُها في المَكانِ نَفسِهِ وبِنَفسِ دَرَجَةِ الحَرارَةِ، ثُمَّ أُراقِبُها يَومِيًّا لِمُدَّةِ أُسبوعٍ وأُسَجِّلُ أَيُّ البُذورِ أَنبَتَت لِأَعرِفَ هَل تَنجَحُ مَوادُّ أُخرى غَيرُ الماءِ في إِنباتِ البُذورِ.</div>
+  </div>
+</div>
+
+<footer>مختبر افتراضي تفاعلي · وحدة النباتات</footer>
+</div>
+
+<script>
+function toggleAns(id){document.getElementById(id).classList.toggle('show');}
+let day=0;
+const stages=[
+ [],
+ ['M30 118 L30 108'],
+ ['M30 118 L30 100','M60 122 L60 112'],
+ ['M30 118 L30 92 q6 -4 10 -10','M60 122 L60 100 q-6 -4 -10 -8','M90 118 L90 108'],
+ ['M30 118 L30 82 q8 -6 14 -12 M30 90 q-8 -4 -12 -12','M60 122 L60 90 q-8 -6 -14 -10 M60 100 q8 -2 12 -10','M90 118 L90 96 q6 -4 10 -8'],
+ ['M30 118 L30 70 q10 -8 16 -16 M30 82 q-10 -4 -16 -14 M30 60 q6 8 12 8','M60 122 L60 78 q-10 -8 -16 -14 M60 90 q10 -2 16 -12','M90 118 L90 84 q8 -6 12 -12 M90 92 q-8 -4 -12 -12'],
+ ['M30 118 L30 58 q10 -10 18 -18 M30 68 q-12 -4 -18 -16 M30 46 q8 10 14 8','M60 122 L60 66 q-10 -10 -18 -16 M60 76 q12 -2 18 -14 M60 56 q-8 8 -14 6','M90 118 L90 72 q10 -8 14 -16 M90 80 q-10 -4 -14 -14']
+];
+function render(){
+  document.getElementById('dayLabel').textContent='اليوم: '+['٠','١','٢','٣','٤','٥','٦'][day];
+  const g=document.getElementById('wetPlants');
+  g.innerHTML='';
+  stages[day].forEach(function(d,i){
+    const p=document.createElementNS('http://www.w3.org/2000/svg','path');
+    p.setAttribute('d',d);
+    p.setAttribute('stroke','#4a9a4e');
+    p.setAttribute('stroke-width','4');
+    p.setAttribute('fill','none');
+    p.setAttribute('stroke-linecap','round');
+    g.appendChild(p);
+    if(day>=3){
+      const c1=document.createElementNS('http://www.w3.org/2000/svg','circle');
+      const cx=[30,60,90][i]; const cy=day>=6?45:(day>=5?55:(day>=4?68:100));
+      c1.setAttribute('cx',cx); c1.setAttribute('cy',cy-25); c1.setAttribute('r','9');
+      c1.setAttribute('fill','#6cbf6f');
+      g.appendChild(c1);
+    }
+  });
+  if(day>=6){document.getElementById('dayBtn').disabled=true;document.getElementById('dayBtn').textContent='اكتمل الأسبوع ✔';}
+}
+function nextDay(){ if(day<6){day++;render();} }
+render();
+</script>
+</body>
+</html>
